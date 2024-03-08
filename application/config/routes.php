@@ -50,6 +50,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+// Below is the route for
+//$route["api/register"] = 'api/AuthController/register';
+//$route["api/test"]["post"] = 'api/AuthController/test';
+$route["testing"] = "Test";
+
 $route['default_controller'] = 'login';
 $route['no_access/([^/]+)'] = 'no_access/index/$1';
 $route['no_access/([^/]+)/([^/]+)'] = 'no_access/index/$1/$2';

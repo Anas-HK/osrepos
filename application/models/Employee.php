@@ -6,6 +6,42 @@
 
 class Employee extends Person
 {
+	// API Login
+//	public function loginAPI($username, $password)
+//	{
+//		$query = $this->db->get_where('employees', array('username' => $username, 'deleted' => 0), 1);
+//
+//		if ($query->num_rows() === 1) {
+//			$row = $query->row();
+//
+//			// compare passwords depending on the hash version
+//			if ($row->hash_version === '1' && $row->password === md5($password)) {
+//				// Update password hash if using old hash version
+//				$this->db->where('person_id', $row->person_id);
+//				$password_hash = password_hash($password, PASSWORD_DEFAULT);
+//				$this->db->update('employees', array('hash_version' => 2, 'password' => $password_hash));
+//			} elseif ($row->hash_version === '2' && password_verify($password, $row->password)) {
+//				// Authentication successful
+//				return $row;
+//			}
+//		}
+//
+//		return false;
+//	}
+//	public function get_info_by_username($username)
+//	{
+//		$this->db->from('employees');
+//		$this->db->join('people', 'people.person_id = employees.person_id');
+//		$this->db->where('employees.username', $username);
+//		$query = $this->db->get();
+//
+//		if ($query->num_rows() == 1) {
+//			return $query->row();
+//		} else {
+//			return NULL;
+//		}
+//	}
+
 	/*
 	Determines if a given person_id is an employee
 	*/
