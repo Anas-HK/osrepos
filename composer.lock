@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39829ee57ca769cd2030341ad186fbe7",
+    "content-hash": "48f259f48ee22b18bd5ad315e936a19a",
     "packages": [
         {
             "name": "codeigniter/framework",
@@ -2310,7 +2310,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
