@@ -258,7 +258,7 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 1;
+$config['log_threshold'] = 2;
 
 /*
 |--------------------------------------------------------------------------
@@ -488,7 +488,11 @@ $config['csrf_token_name'] = 'csrf_ospos_v3';
 $config['csrf_cookie_name'] = 'csrf_cookie_ospos_v3';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
+<<<<<<< HEAD
 $config['csrf_exclude_uris'] = array('login', 'api/login');
+=======
+$config['csrf_exclude_uris'] = array('login', 'api/login', 'api/product');
+>>>>>>> JWTAuth
 
 /*
 |--------------------------------------------------------------------------
